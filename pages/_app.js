@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
-import '../styles/globals.css';
+import '../styles/globals.scss';
+import navStyles from '../styles/nav.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
