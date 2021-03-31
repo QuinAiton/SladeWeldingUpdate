@@ -6,6 +6,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999;
+  background-color: rgb(0, 0, 0);
 
   nav {
     position: absolute;
@@ -19,22 +20,26 @@ header {
     transition: transform 400ms ease-in-out;
   }
 
-  nav ul {
-    margin: 0;
-    padding: o;
-    list-style: none;
-  }
-
   nav li {
     margin-bottom: 1em;
     margin-left: 1em;
   }
 
-  nav a {
+  Link {
     text-decoration: none;
     text-transform: uppercase;
     opacity: 1;
     transition: opacity 150ms ease-in-out;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin-top: 5vh;
+  }
+  .contact {
+    color: white;
   }
 }
 /* ==========================================================
@@ -51,12 +56,13 @@ header {
 }
 
 .nav li {
+  align-self: center;
   list-style: outside none none;
   margin: 0.5em 1em;
   padding: 0;
 }
 
-.nav a {
+.nav Link {
   padding: 0.5em 0.8em;
   color: white;
   position: relative;
@@ -64,8 +70,8 @@ header {
   font-size: 20px;
 }
 
-.nav a::before,
-.nav a::after {
+.nav Link::before,
+.nav Link::after {
   content: '';
   height: 14px;
   width: 14px;
@@ -74,7 +80,7 @@ header {
   opacity: 0;
 }
 
-.nav a::before {
+.nav Link::before {
   content: '';
   right: 0;
   top: 0;
@@ -83,7 +89,7 @@ header {
   transform: translate(-100%, 50%);
 }
 
-.nav a:after {
+.nav Link:after {
   content: '';
   left: 0;
   bottom: 0;
@@ -92,24 +98,24 @@ header {
   transform: translate(100%, -50%);
 }
 
-.nav a:hover:before,
-.nav a:hover:after {
+.nav Link:hover:before,
+.nav Link:hover:after {
   transform: translate(0, 0);
   opacity: 1;
 }
 
-.nav a:hover {
+.nav Link:hover {
   transition: ease-in-out 500ms;
   color: white;
 }
-.nav li a:focus,
-.nav li a:hover {
+.nav li Link:focus,
+.nav li Link:hover {
   background-color: rgba(0, 0, 0, 0); /*desired color*/
 }
 /* ================================================================ */
 /* small screen navigation bar */
 @media screen and (max-width: 1000px) {
-  nav a {
+  nav Link {
     text-shadow: 2px 2px 2px black;
   }
   nav {
@@ -256,13 +262,13 @@ header {
     padding: 1.5rem;
   }
 
-  .menu-wrap .menu > div > div > ul > li > a {
+  .menu-wrap .menu > div > div > ul > li > Link {
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
   }
-  .nav li a:focus,
-  .nav li a:hover {
+  .nav li Link:focus,
+  .nav li Link:hover {
     background-color: rgba(123, 146, 165, 0);
   }
 }
@@ -273,29 +279,14 @@ header {
     display: none;
   }
 
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
   .logo {
     grid-column: 1 / 3;
   }
 
   nav {
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
-    all: unset;
-    grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 30px;
-    z-index: 1;
   }
 
   nav ul {

@@ -3,14 +3,18 @@ const Nav = () => {
   return (
     <nav>
       <header>
-        <div className='Logo'>
-          <img src='/WeldingLogo.jpeg' height='100px' width='auto'></img>
-        </div>
         <div className='menu-wrap'>
           <input type='checkbox' className='toggler' />
           <div className='hamburger'>
             <div className='menu'>
               <ul className='nav'>
+                <div className='Logo'>
+                  <img
+                    src='/WeldingLogo.jpeg'
+                    height='100px'
+                    width='auto'
+                  ></img>
+                </div>
                 <li>
                   <Link href='/'>
                     <span
@@ -59,6 +63,7 @@ const Nav = () => {
                   </Link>
                 </li>
               </ul>
+              <span className='contact'>Call Now! 604-905-8541</span>
             </div>
           </div>
         </div>
