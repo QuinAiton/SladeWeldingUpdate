@@ -4,6 +4,7 @@ import '../styles/nav.scss';
 import '../styles/index.scss';
 import '../styles/services.scss';
 import '../styles/gallery.scss';
+import '../styles/about.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
