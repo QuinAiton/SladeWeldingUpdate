@@ -1,18 +1,14 @@
 // Big screen Styles
 .services-container {
-  margin: 40px 20px;
+  margin: 10vh 20px;
   height: 100%;
   overflow: hidden;
 
   h3 {
     text-align: center;
-    font-size: 1.3em;
   }
-
   h2 {
     text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
   }
 }
 
@@ -25,6 +21,12 @@
 .service-card {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
   margin: 5px;
+  border: 1px solid white;
+  border-radius: 25px;
+
+  p {
+    margin: 15px;
+  }
 }

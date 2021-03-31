@@ -20,3 +20,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+img {
+  border-radius: 25px 25px 0 0;
+}
+
+span {
+  cursor: pointer;
+}

@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 const services = () => {
   return (
@@ -9,8 +8,8 @@ const services = () => {
           <Image
             src='/pressure_welding-min.jpg'
             alt='Pressure Welding'
-            width={700}
-            height={700}
+            width={500}
+            height={500}
           />
           <div className='card-text'>
             <h3>Pressure Welding</h3>
@@ -30,8 +29,8 @@ const services = () => {
           <Image
             src='/structural_welding-min.jpg'
             alt='structural welding'
-            width={700}
-            height={700}
+            width={500}
+            height={500}
           />
           <div className='card-text'>
             <h3>Structural Welding & Fabrication</h3>
@@ -51,8 +50,8 @@ const services = () => {
           <Image
             src='/repair-min.png'
             alt='equipment repair'
-            width={700}
-            height={700}
+            width={500}
+            height={500}
           />
           <div className='card-text'>
             <h3>Equipment Repair</h3>
