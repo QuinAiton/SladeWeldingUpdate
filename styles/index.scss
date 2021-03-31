@@ -1,0 +1,33 @@
+.v-section {
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  overflow-y: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen-video-wrap video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-position: top center;
+}
+
+.section-content {
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.section-content h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.section-content h4 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2rem;
+}
