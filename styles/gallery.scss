@@ -1,0 +1,22 @@
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15vh 3vh;
+
+  h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
+.gallery-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 0;
+}
+
+.gallery-item {
+  width: 100%;
+  border: 5px solid #fff;
+}
