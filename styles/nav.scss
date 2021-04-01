@@ -1,12 +1,12 @@
 /*--------------navigation styles--------------------------------*/
 header {
-  margin-top: 5vh;
+  margin-top: 7vh;
   background: var(--background);
   text-align: center;
   position: fixed;
   width: 100%;
   z-index: 999;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(17, 17, 17, 0.425);
 
   nav {
     position: absolute;
@@ -40,7 +40,7 @@ header {
     margin-top: 5vh;
   }
   .contact {
-    color: white;
+    color: rgb(255, 255, 255);
   }
 }
 

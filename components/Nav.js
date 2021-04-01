@@ -63,7 +63,7 @@ const Nav = () => {
                   </Link>
                 </li>
               </ul>
-              <a className='contact-link' href='tel:+6049058541'>
+              <a href='tel:+6049058541'>
                 <span className='contact'>Call Now! 604-905-8541</span>
               </a>
             </div>
