@@ -1,4 +1,5 @@
-import Nav from '../components/Nav';
+import dynamic from 'next/dynamic';
+const Nav = dynamic(() => import('../components/Nav'));
 import '../styles/globals.scss';
 import '../styles/nav.scss';
 import '../styles/index.scss';

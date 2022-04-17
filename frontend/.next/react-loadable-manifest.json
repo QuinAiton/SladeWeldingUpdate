@@ -1,8 +1,26 @@
 {
+  "../components/Nav": [
+    {
+      "id": "./components/Nav.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/client/link.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/client/use-intersection.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/link.js",
+      "file": "static/chunks/0.js"
+    }
+  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",
-      "file": "static/chunks/0.js"
+      "file": "static/chunks/1.js"
     }
   ]
 }

@@ -19,14 +19,13 @@ export default {
     {
       name: 'body',
       title: 'Body',
-      type: 'blockContent',
+      type: 'string',
     },
   ],
 
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
       media: 'mainImage',
     },
   },

@@ -5,7 +5,6 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // We import object and document schemas
-import blockContent from './blockContent';
 import gallery from './gallery';
 import services from './services';
 
@@ -22,6 +21,5 @@ export default createSchema({
     gallery,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
-    blockContent,
   ]),
 });
