@@ -6,7 +6,7 @@ const contact = () => {
       <Image
         src='/contact-min.jpg'
         alt='Welding truck by buncher'
-        height={600}
+        height={500}
         width={2000}
         responsive='true'
       />

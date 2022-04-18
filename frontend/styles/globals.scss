@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap");
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: orbitron, sans-serif;
+  font-weight: 400;
+}
 html,
 body {
   background-color: #111;
@@ -10,6 +17,11 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+p {
+  font-family: oxygen, sans-serif;
+  font-weight: 200;
+  text-indent: 50px;
 }
 
 a {
@@ -24,6 +36,8 @@ a {
 h2 {
   font-size: 2em;
   text-transform: uppercase;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 h3 {
@@ -37,4 +51,8 @@ img {
 
 span {
   cursor: pointer;
+}
+h1 {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }

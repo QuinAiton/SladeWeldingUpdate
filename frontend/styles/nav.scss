@@ -1,47 +1,46 @@
-/*--------------navigation styles--------------------------------*/
 header {
-  margin-top: 7vh;
-  background: var(--background);
+  background-color: rgba(0, 0, 0, 0.203);
   text-align: center;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 999;
-  background-color: rgba(17, 17, 17, 0.425);
+  padding-top: 10px;
+}
 
-  nav {
-    position: absolute;
-    text-align: right;
-    top: 100%;
-    left: 0;
-    background: var(--background);
-    width: 100%;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
-  }
+nav {
+  position: absolute;
+  text-align: right;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
 
-  nav li {
-    margin-bottom: 1em;
-    margin-left: 1em;
-  }
+nav ul {
+  margin: 0;
+  padding: o;
+  list-style: none;
+}
 
-  Link {
-    text-decoration: none;
-    text-transform: uppercase;
-    opacity: 1;
-    transition: opacity 150ms ease-in-out;
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+
+  h4 {
+    margin: 0;
   }
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90vw;
-    margin: 0 auto;
-    margin-top: 5vh;
-  }
-  .contact {
-    color: rgb(255, 255, 255);
-  }
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
 }
 
 /* ==========================================================
@@ -58,13 +57,12 @@ header {
 }
 
 .nav li {
-  align-self: center;
   list-style: outside none none;
   margin: 0.5em 1em;
   padding: 0;
 }
 
-.nav Link {
+.nav a {
   padding: 0.5em 0.8em;
   color: white;
   position: relative;
@@ -72,9 +70,9 @@ header {
   font-size: 20px;
 }
 
-.nav Link::before,
-.nav Link::after {
-  content: '';
+.nav a::before,
+.nav a::after {
+  content: "";
   height: 14px;
   width: 14px;
   position: absolute;
@@ -82,8 +80,8 @@ header {
   opacity: 0;
 }
 
-.nav Link::before {
-  content: '';
+.nav a::before {
+  content: "";
   right: 0;
   top: 0;
   border-top: 3px solid gold;
@@ -91,8 +89,8 @@ header {
   transform: translate(-100%, 50%);
 }
 
-.nav Link:after {
-  content: '';
+.nav a:after {
+  content: "";
   left: 0;
   bottom: 0;
   border-bottom: 3px solid gold;
@@ -100,24 +98,29 @@ header {
   transform: translate(100%, -50%);
 }
 
-.nav Link:hover:before,
-.nav Link:hover:after {
+.nav a:hover:before,
+.nav a:hover:after {
   transform: translate(0, 0);
   opacity: 1;
 }
 
-.nav Link:hover {
+.nav a:hover {
   transition: ease-in-out 500ms;
   color: white;
 }
-.nav li Link:focus,
-.nav li Link:hover {
+.nav li a:focus,
+.nav li a:hover {
   background-color: rgba(0, 0, 0, 0); /*desired color*/
 }
 /* ================================================================ */
 /* small screen navigation bar */
 @media screen and (max-width: 1000px) {
-  nav Link {
+  .Logo {
+    margin: auto;
+    width: 70px;
+    height: 70px;
+  }
+  nav a {
     text-shadow: 2px 2px 2px black;
   }
   nav {
@@ -158,7 +161,6 @@ header {
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +182,7 @@ header {
   /* Hamburger Lines - Top & Bottom */
   .menu-wrap .hamburger > div::before,
   .menu-wrap .hamburger > div::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     top: -10px;
@@ -264,13 +266,13 @@ header {
     padding: 1.5rem;
   }
 
-  .menu-wrap .menu > div > div > ul > li > Link {
+  .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
   }
-  .nav li Link:focus,
-  .nav li Link:hover {
+  .nav li a:focus,
+  .nav li a:hover {
     background-color: rgba(123, 146, 165, 0);
   }
 }
@@ -280,15 +282,29 @@ header {
   .toggler {
     display: none;
   }
-
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
   .logo {
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
   }
 
   nav {
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+    all: unset;
+    grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-bottom: 30px;
+    z-index: 1;
   }
 
   nav ul {
@@ -303,5 +319,3 @@ header {
     z-index: 1;
   }
 }
-
-/* ============================================================ */

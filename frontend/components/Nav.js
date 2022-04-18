@@ -1,76 +1,96 @@
+import React from 'react';
 import Link from 'next/link';
+import Image from 'next/dist/client/image';
 const Nav = () => {
   return (
-    <nav>
-      <header>
-        <div className='menu-wrap'>
-          <input type='checkbox' className='toggler' />
-          <div className='hamburger'>
-            <div className='menu'>
-              <ul className='nav'>
-                <div className='Logo'>
-                  <img
-                    src='/WeldingLogo.jpeg'
-                    height='100px'
-                    width='auto'
-                  ></img>
-                </div>
-                <li>
-                  <Link href='/'>
-                    <span
-                      className='glyphicon glyphicon-home'
-                      aria-hidden='true'
-                    >
-                      Home
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/services'>
-                    <span
-                      className='glyphicon glyphicon-wrench'
-                      aria-hidden='true'
-                    >
-                      services
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/gallery'>
-                    <span className='glyphicon glyphicon-th' aria-hidden='true'>
-                      Gallery
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/about'>
-                    <span
-                      className='glyphicon glyphicon-user'
-                      aria-hidden='true'
-                    >
-                      About
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/contact'>
-                    <span
-                      className='glyphicon glyphicon-phone'
-                      aria-hidden='true'
-                    >
-                      Contact
-                    </span>
-                  </Link>
-                </li>
-              </ul>
-              <a href='tel:+6049058541'>
-                <span className='contact'>Call Now! 604-905-8541</span>
-              </a>
+    <header>
+      <div class="Logo">
+        <Image width={100} height={100} src="/WeldingLogo.jpeg" alt="slade mobile welding logo" />
+      </div>
+      <nav>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul class="nav">
+                  <li>
+                    <Link href='/'>
+                      <a>
+                        <span
+                          class="glyphicon glyphicon-home"
+                          aria-hidden="true"
+                        >
+                        </span>
+                        Home
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services">
+                      <a>
+                        <span
+                          class="glyphicon glyphicon-wrench"
+                          aria-hidden="true"
+                        >
+                        </span>
+                        services
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/gallery">
+                      <a
+                      ><span class="glyphicon glyphicon-th" aria-hidden="true">
+                        </span>
+                        Gallery
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about">
+                      <a
+                      ><span
+                        class="glyphicon glyphicon-user"
+                        aria-hidden="true"
+                      >
+                        </span>
+                        About
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">
+                      <a
+                      ><span
+                        class="glyphicon glyphicon-phone"
+                        aria-hidden="true"
+                      >
+                        </span>
+                        Contact
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={'tel:6049058541'}>
+                      <a
+                      ><span
+                        class="glyphicon glyphicon-phone"
+                        aria-hidden="true"
+                      >
+                        </span>
+                        Call Now! 604-905-8541
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </header>
-    </nav>
+      </nav>
+    </header >
   );
 };
 

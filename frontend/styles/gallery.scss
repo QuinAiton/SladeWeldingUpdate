@@ -27,3 +27,14 @@ img {
   object-fit: cover;
   object-position: center;
 }
+
+@media screen and (max-width: 1000px) {
+  .gallery-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery-content {
+    grid-template-columns: 1fr;
+  }
+}

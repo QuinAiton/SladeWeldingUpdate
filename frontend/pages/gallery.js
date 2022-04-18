@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import sanityClient from './api/sanityClient';
-import image from 'next/image';
 
 const gallery = () => {
   const [images, setImages] = useState([]);

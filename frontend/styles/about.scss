@@ -1,4 +1,6 @@
 .about-container {
+  background-color: rgba(0, 0, 0, 0.464);
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
 
@@ -10,51 +12,76 @@
   h4 {
     font-size: 1.3em;
   }
-
-  .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto auto;
-    width: 50vw;
-  }
-
-  .about-content > div {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  hr {
-    width: 60%;
-  }
-  .capabilities {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    ul {
-      padding-left: 0;
-      margin: 10px;
-      padding: 10px;
-    }
-  }
-
-  .certificates {
-    flex-basis: 50%;
-  }
-
-  .story {
-    h4 {
-      text-align: center;
-    }
+  img {
+    filter: brightness(0.5);
+    object-fit: cover;
   }
 }
+.about-content {
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto auto;
+  width: 80vw;
+}
 
-@media screen and (max-width: 600px) {
+.about-content > div {
+  margin: 20px;
+}
+
+hr {
+  width: 60%;
+}
+.capabilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  ul {
+    padding-left: 0;
+    margin: 10px;
+    padding: 10px;
+  }
+  li {
+    text-align: left;
+  }
+  h2 {
+    margin: 5px;
+    text-align: left;
+  }
+}
+.section_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.certificates {
+  padding-inline: 20px;
+  border-radius: 20px;
+  p {
+    text-indent: 50px;
+  }
+  h4 {
+    text-align: center;
+  }
+}
+.story {
+  padding-inline: 20px;
+  border-radius: 20px;
+  p {
+    text-indent: 50px;
+  }
+  h4 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
   .about-container {
+    margin-top: 10vh;
     .about-content {
       width: 100%;
       margin: 0;
+      grid-template-columns: 1fr;
     }
 
     .about-content > div {
@@ -64,9 +91,9 @@
       font-size: 1em;
     }
     .capabilities {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      padding: 20px;
+      justify-content: center;
+      margin: auto;
     }
   }
 }

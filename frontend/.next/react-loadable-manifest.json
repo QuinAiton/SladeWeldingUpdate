@@ -5,11 +5,83 @@
       "file": "static/chunks/0.js"
     },
     {
+      "id": "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/extends.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/getPrototypeOf.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/inherits.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/iterableToArray.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/nonIterableSpread.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/toConsumableArray.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/client/image.js",
+      "file": "static/chunks/0.js"
+    },
+    {
       "id": "./node_modules/next/dist/client/link.js",
       "file": "static/chunks/0.js"
     },
     {
       "id": "./node_modules/next/dist/client/use-intersection.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/amp-context.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/amp.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/head-manager-context.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/head.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/side-effect.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/to-base-64.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/server/image-config.js",
       "file": "static/chunks/0.js"
     },
     {
