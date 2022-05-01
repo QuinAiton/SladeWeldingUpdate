@@ -54,7 +54,7 @@ const services = () => {
   return (
     <main className='services-container'>
       <h2>Services</h2>
-      <div className='services-content'>
+      <div data-aos="fade-in" className='services-content'>
         {serviceList}
       </div >
 

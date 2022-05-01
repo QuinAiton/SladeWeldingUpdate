@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/dist/client/image";
+
 export default function Home() {
   return (
     <section className='v-section'>
@@ -16,7 +17,7 @@ export default function Home() {
         />
       </div>
 
-      <div className='section-content text-center'>
+      <div data-aos="fade-up" className='section-content text-center'>
         <h1>Mobile welding Services</h1>
         <h4>Proudly serving Pemberton and the Sea to Sky Corridor</h4>
       </div>

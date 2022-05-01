@@ -28,7 +28,7 @@ const gallery = () => {
 
   const imageList = images?.map((img) => {
     return (
-      <div key={img._id} className='gallery-item' >
+      <div data-aos="fade-in" key={img._id} className='gallery-item' >
         <Image
           height={500}
           width={500}

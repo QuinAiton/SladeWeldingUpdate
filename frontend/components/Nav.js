@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/dist/client/image';
 const Nav = () => {
   return (
-    <header>
+    <header data-aos="fade-down">
       <div class="Logo">
         <Image width={100} height={100} src="/WeldingLogo.jpeg" alt="slade mobile welding logo" />
       </div>
