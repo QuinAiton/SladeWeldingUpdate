@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
-const Nav = dynamic(() => import('../components/Nav'));
+import Nav from '../components/Nav';
 import '../styles/globals.scss';
 import '../styles/nav.scss';
 import '../styles/index.scss';
@@ -58,7 +58,7 @@ function MyApp({ Component, pageProps }) {
       </head>
       <body>
         <Nav />
-        <Component {...pageProps} />)
+        <Component {...pageProps} />
       </body>
     </>
   );

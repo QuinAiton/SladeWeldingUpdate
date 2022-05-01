@@ -32,9 +32,11 @@ const services = () => {
     }
   }, [services]);
 
+
+
   const serviceList = services?.map((service, index) => {
     return (
-      <div key={index} className='service-card'>
+      <div data-aos="fade-up" key={index} className='service-card'>
         <Image
           src={service.mainImage.asset.url}
           alt='Pressure Welding'
@@ -54,7 +56,7 @@ const services = () => {
   return (
     <main className='services-container'>
       <h2>Services</h2>
-      <div data-aos="fade-in" className='services-content'>
+      <div className='services-content'>
         {serviceList}
       </div >
 

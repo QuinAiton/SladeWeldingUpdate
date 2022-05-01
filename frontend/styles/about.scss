@@ -1,6 +1,6 @@
 .about-container {
   background-color: rgba(0, 0, 0, 0.464);
-  margin-top: 20vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
 
@@ -38,9 +38,10 @@ hr {
   justify-content: space-evenly;
   width: 100%;
   ul {
+    list-style: circle;
     padding-left: 0;
-    margin: 10px;
     padding: 10px;
+    line-height: 25px;
   }
   li {
     text-align: left;
@@ -51,6 +52,7 @@ hr {
   }
 }
 .section_2 {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

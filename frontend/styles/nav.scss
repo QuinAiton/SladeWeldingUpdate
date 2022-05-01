@@ -4,7 +4,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
   padding-top: 10px;
 }
@@ -115,6 +115,9 @@ nav a {
 /* ================================================================ */
 /* small screen navigation bar */
 @media screen and (max-width: 1000px) {
+  header {
+    height: 100vh;
+  }
   .Logo {
     margin: auto;
     width: 70px;
@@ -131,7 +134,7 @@ nav a {
   :root {
     --primary-color: rgba(0, 5, 7, 0.75);
     --overlay-color: rgba(24, 39, 51, 0.85);
-    --menu-speed: 0.75s;
+    --menu-speed: 0.35s;
   }
 
   /* MENU STYLES */
@@ -244,8 +247,8 @@ nav a {
   .menu-wrap .menu > div {
     background: var(--overlay-color);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 250vw;
+    height: 250vw;
     display: flex;
     flex: none;
     align-items: center;

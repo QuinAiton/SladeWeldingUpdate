@@ -7,33 +7,32 @@ const about = () => {
           src='/aboutImage.jpg'
           alt='Welding pipe'
           layout='fill'
-          responsive='true'
         />
       </div>
       <div className='about-content'>
         <div className='capabilities'>
-          <ul>
-            <h2>What We Offer</h2>
+          <ul data-aos="fade-right">
+            <h3>What We Offer</h3>
             <li>Pipe fabrication & Pressure welding</li>
             <li>Structural welding</li>
             <li>Equipment repairs</li>
             <li>Fabrication</li>
           </ul>
           <br />
-          <ul>
-            <h2>
+          <ul data-aos="fade-right">
+            <h3>
               Processes and <br />
               capabilities we offer:
-            </h2>
-            <li>SMAW(stick)</li>
-            <li>FCAW(wirefeed)</li>
+            </h3>
+            <li>SMAW (stick)</li>
+            <li>FCAW (wirefeed)</li>
             <li>GTAW (AC & DC tig)</li>
             <li>Oxy/Acetylene welding and Cutting</li>
             <li>Gouging</li>
           </ul>
           <br />
-          <ul>
-            <h2>Welding Tickets</h2>
+          <ul data-aos="fade-right">
+            <h3>Welding Tickets</h3>
             <li>PWP7</li>
             <li>PWP10</li>
             <li>CWB-FCAW-all positon</li>
@@ -42,8 +41,8 @@ const about = () => {
           </ul>
         </div>
         <div className='section_2'>
-          <div className='certificates'>
-            <h2>Business & Certifications</h2>
+          <div data-aos="fade-left" className='certificates'>
+            <h3>Business & Certifications</h3>
             <hr />
             <p>
               We are a fully Registered Mobile welding Company with liability coverage and
@@ -56,8 +55,8 @@ const about = () => {
               possible while exceeding industry standards.
             </p>
           </div>
-          <div className='story'>
-            <h2>My Story</h2>
+          <div data-aos="fade-left" className='story'>
+            <h3>My Story</h3>
             <hr />
             <p>
               Born and raised in Pemberton, British Columbia. After graduating
