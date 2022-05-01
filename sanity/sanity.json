@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "SladeWelding"
-  },
   "api": {
     "projectId": "fjxc2rhg",
     "dataset": "production"
+  },
+  "project": {
+    "name": "SladeWelding"
   },
   "plugins": [
     "@sanity/base",
