@@ -78,6 +78,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .v-section {
+    filter: brightness(75%);
+  }
   .fullscreen-video-wrap video {
     display: none;
   }
