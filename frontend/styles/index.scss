@@ -87,5 +87,11 @@
   .section-content {
     padding: 5px;
     z-index: 5;
+
+    h2 {
+      span {
+        display: block;
+      }
+    }
   }
 }

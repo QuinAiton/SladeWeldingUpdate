@@ -10,6 +10,8 @@ import '../styles/about.scss';
 import '../styles/contact.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Head from 'next/head';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -35,11 +37,27 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
-      <head>
+      <Head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-JQG5B6JTHW`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JQG5B6JTHW');
+          `,
+          }}
+        />
         <meta charset="UTF-8" />
         <meta
           name="description"
-          content=" The home page for the Canadian industrial mobile welding company Slade mobile Welding a red seal welding company located in British Columbia Canada servicing the sea to sky corridor, vancouver,  whistler and pemberton and the surrounding areas"
+          content="Canadian industrial mobile welding company Slade mobile Welding is a red seal welding company located in British Columbia Canada and services the sea to sky corridor, vancouver,  whistler and pemberton and the surrounding areas"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
@@ -65,15 +83,7 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQG5B6JTHW"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-
-          gtag('config', 'G-JQG5B6JTHW');
-        </script>
-      </head>
+      </Head>
       <body>
         <Nav />
         <Component {...pageProps} />
