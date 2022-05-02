@@ -10,7 +10,7 @@ const contact = () => {
         width={2000}
         responsive='true'
       />
-      <div className='contact-content'>
+      <div data-aos="fade-up" className='contact-content'>
         <h2>Slade Industrial Welding</h2>
         <hr />
         <h3>Contact information</h3>

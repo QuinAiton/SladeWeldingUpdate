@@ -36,7 +36,16 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <head>
-        <title>Slade Industrial Welding</title>
+        <meta charset="UTF-8" />
+        <meta
+          name="description"
+          content=" The home page for the Canadian industrial mobile welding company Slade mobile Welding a red seal welding company located in British Columbia Canada servicing the sea to sky corridor, vancouver,  whistler and pemberton and the surrounding areas"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+          Slades Mobile Welding Services - Welding You Can Trust.
+        </title>
+        <link rel="canonical" href="https://SladeWelding.ca/index.html" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -55,6 +64,15 @@ function MyApp({ Component, pageProps }) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQG5B6JTHW"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-JQG5B6JTHW');
+        </script>
       </head>
       <body>
         <Nav />
