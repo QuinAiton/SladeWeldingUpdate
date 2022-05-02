@@ -21,7 +21,7 @@ export default function Home() {
       <div data-aos="fade-up" className='section-content'>
         <h1> Slades Mobile welding Services</h1>
         <h2>When You Need It <span>||</span> Where You Need It</h2>
-        <h4>Proudly serving Pemberton and the Sea to Sky Corridor</h4>
+        <h4>Proudly serving Pemberton, Vancouver and everywhere in between</h4>
         <div className="index-button">
           <Link href={"/services"}>
             <button> View Services <ImArrowRight2 /></button>
